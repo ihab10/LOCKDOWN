@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <script src="App.js"></script>
+    <script src="registration.js"></script>
+</head>
+<header id="top_header" class="clearfix">
+    <div class="wrapper">
+        <a href="index.html"><h1 class="logo">Lockdown<span>&amp;</span>Chill</h1></a>
+    
+        <a href="#" class="menu"><i class="fa fa-bars"></i></a>
+        <nav id="main_nav">
+            
+            <a class="loginTag" href="login.html">Login</a>
+            <a class="loginTag" href="Register.html">Sign-up</a>
+            <a href="Movies.html" >Movies</a>
+            <a href="TvShows.html" >TV Shows</a>
+            <a href="Contact.html">Contact Us</a>
+            <a href="About.html">About</a>
+        </nav>
+    </div>
+</header>
+<body>
+    <div id="myProgress">
+		<div id="myBarr"></div>
+	  </div>
+    <div class="register-photo">
+        <div class="form-container">
+           <!-- <div class="image-holder"></div> -->
+            <form method="post">
+                <h2 class="text-center"><strong>Create</strong> an account.</h2>
+                <div class="form-group"><input class="form-control" id="emailEntry" type="email" name="email" placeholder="Email" required></div>
+                <div class="form-group"><input class="form-control" id="password1" type="password" name="password" placeholder="Password" required></div>
+                <div class="form-group"><input class="form-control" id="password2" type="password" name="password-repeat" placeholder="Password (repeat)" required></div>
+                <div class="form-group">
+                    <div class="form-check"><label class="form-check-label"><input class="form-check-input" id="checkBox" type="checkbox">I agree to the license terms.</label></div>
+                    <p class="already" id="errorMessage" style="font-weight: bold; color: red;"></p>
+                </div>
+                <div class="form-group"><input class="btn btn-primary btn-block" type="button" value="Sign Up" id="signUp" onclick="checkFormEntry()"></div>
+                <a href="login.html" class="already">You already have an account? Login here.</a></form>
+        </div>
+    </div>
+</body>
+</html>
